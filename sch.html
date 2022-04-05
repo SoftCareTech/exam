@@ -1,0 +1,16 @@
+
+
+<?php
+ include("head.php"); 
+ if(isset($user)){
+if($user!=null)
+if($user->role == 'student')
+echo "<mark> Student </mark> ".$user->name;
+else 
+echo "<mark> Staff </mark> ".$user->name;
+ 
+}?> 
+
+
+</div>
+<div  <?php echo $bd; ?>  >

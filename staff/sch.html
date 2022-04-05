@@ -1,0 +1,32 @@
+<?php include("../head.php"); ?> 
+<h3> <a href="../admin.php" > Staff Menu</a> </h3>
+<div  class="topnav" align="right" >
+ 
+
+
+<a <?php echo $loc; ?> href="../" > logout</a> 
+
+<a <?php echo $abc; ?> href="about.php" > About</a>
+
+<?php 
+
+if(!isset($_SESSION['user'])){
+header("Location: ../staff/error.php?c=UNSET sesesion (user) "); 
+  die();
+}
+
+if(isset($user)){
+
+if($user->role == 'student')
+echo " <a  ".$uc." ' href='.../changePassword.php' > <mark  ".$rc."> Student </mark> ".$user->name." </a>"; 
+else 
+echo "<a  ".$uc." ' href='../changePassword.php' >  <mark ".$rc."> Staff </mark>  ".$user->name." </a>"; 
+}?> 
+
+
+  
+</div>
+
+</div>
+
+<div height="100%" <?php echo $bd ?>  >

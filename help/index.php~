@@ -1,0 +1,17 @@
+  
+<?php 
+include("../head.php");
+
+
+?>
+<h1> <a href="../" > SoftCare Computer Guide </a> </h1> 
+    <div <?php  echo $bd;
+?> >
+<h1> <a href="../" > no guide yet</a> </h1> 
+<h1> <a href="../" > SoftCare Computer Guide </a> </h1> <h1> <a href="../" > SoftCare Computer Guide </a> </h1> <h1> <a href="../" > SoftCare Computer Guide </a> </h1> <h1> <a href="../" > SoftCare Computer Guide </a> </h1> <h1> <a href="../" > SoftCare Computer Guide </a>  
+    
+
+<?php
+include("../class/footer.html");
+
+?>
